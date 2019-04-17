@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.qrcodescanner.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_weight="1">
+
+       <Button
+           android:id="@+id/scanCode"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Scan a QR Code"
+           android:textAllCaps="false"
+           android:textColor="#ffffff"
+           android:background="@drawable/button_shape"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="5dp"/>
+
+       <Button
+           android:id="@+id/showResult"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Show Results"
+           android:textAllCaps="false"
+           android:textColor="#ffffff"
+           android:background="@drawable/button_shape"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="5dp"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_marginTop="5dp"
+           android:layout_marginBottom="5dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp">
+
+       <Button
+           android:id="@+id/sendToWhatsapp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Send Results to WhatsApp"
+           android:textAllCaps="false"
+           android:textColor="#ffffff"
+           android:background="@drawable/button_shape"
+           android:layout_marginRight="2dp"
+           android:padding="4dp"
+           android:layout_weight="1"/>
+
+       <Button
+           android:id="@+id/sendNames"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Send Names to WhatsApp"
+           android:textAllCaps="false"
+           android:textColor="#ffffff"
+           android:background="@drawable/button_shape"
+           android:layout_marginRight="2dp"
+           android:padding="4dp"
+           android:layout_weight="1"/>
+
+       </LinearLayout>
+
+       <Button
+           android:id="@+id/startNewShift"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Start a New Shift"
+           android:textAllCaps="false"
+           android:textColor="#ffffff"
+           android:background="@drawable/button_shape"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp" />
+
+       <Button
+           android:id="@+id/resetApp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Reset"
+           android:textAllCaps="false"
+           android:textColor="#ffffff"
+           android:background="@drawable/button_shape"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_marginTop="5dp"/>
+
+   </LinearLayout>
+
+</LinearLayout>
